@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+:root {
+  --light-green: #BABD8D;
+  --peach: #FFDAC6;
+  --light-purple: #998FC7;
+  --dark-purple: #361D2E;
+  --dark-green: #37371F;
+  --shadow: #1B1725;
+}
+
+/* ALL PAGES */
+body {
+    background-color: var(--dark-green);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    color: var(--dark-purple);
+    font-size:clamp(12px, 1.5vw, 22px);;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 200%;
+    color: var(--light-purple);
+}
+
+/* NAVIGATION BAR */
+nav { 
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--light-green);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.2s; 
+}
+
+nav a {
+    display: flex;
+    color: var(--dark-purple);
+    padding: 1vw 1vw;
+    text-decoration: none;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+}
+
+nav a:hover {
+    font-weight: bold;
+    background-color: #e0c6ba;
+    transition: 0.3s;
+}
+
+.openbtn {
+    float:left;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: var(--light-green);
+    color: var(--light-purple);
+    border: none;
+    font-size: clamp(10px, 2vw, 30px);
+    font-weight: bold;
+
+} 
+
+.openbtn:hover {
+    background-color: var(--dark-purple);
+    
+}
+
+#main {
+    transition: margin-left .5s;
+}
+
+
+/* HOME PAGE IMAGE BUTTONS */
+#image-buttons-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.2vw;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    position: relative;
+}
+
+.image-buttons-home {
+    object-fit: cover;
+    width: 80%;
+    max-width: 400px;
+    min-width: 50px;
+    border-radius: 20px;
+}
+
+.image-buttons-home:hover {
+    box-shadow: 0 20px 20px 0 var(--shadow);
+}
+
+.button-with-text {
+    position: relative;
+}
+
+.button-text{
+    color: var(--dark-purple);
+    background-color: var(--light-green);
+    width: 40%;
+    text-decoration: none;
+    font-size: clamp(10px, 3vw, 20px);
+    padding: clamp(5px, 3vw, 10px);
+    border-radius: 8px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.button-text a h2:visited{
+    color: var(--light-purple);
+    text-decoration: none;
+}
+
+/* ABOUT */
+.image-with-text{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.portrait{
+    width: 40%;
+    border-radius: 20px;
+}
+
+.image-with-text p {
+    margin: clamp(5px, 10vw, 100px);
+    color: var(--light-green);
+    width: 60%;
+}
+
+#odd-row {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 0;
+}
+
+/* HOW TO HELP */
+
+.image-buttons-help {
+    width: 80%;
+    max-width: 700px;
+    min-width: 50px;
+    border-radius: 15px;
+    padding: 3em;
+    background-color: #EFD9CE;
+}
+
+.image-buttons-help:hover {
+    box-shadow: 0 20px 20px 0 var(--shadow);
+}
+
+/* RESOURCES */
+#myTable {
+    background-color: var(--light-green);
+    color: var(--dark-green);
+    border-collapse: collapse;
+    margin: 5%;
+    border: 2px solid;
+    font-size: clamp(10px, 0.8em, 30px);
+}
+
+.hiddenRow {
+	display: none;
+}
+
+#header {
+    position: sticky;
+    top: -1px;
+    background-color: var(--light-green);
+    border: 2px solid;
+}
+
+tr:hover{
+    background-color: #a7aa7d;
+}
+
+.oddRow {
+    background-color: #969973;
+}
+
+.oddRow:hover {
+    background-color: #8e916e;
+}
+
+th {
+    box-shadow: inset 0 3px 0 var(--dark-green), inset 0 -3px 0 var(--dark-green);
+    font-weight: bold;
+    padding: 20px;
+}
+
+td {
+    border: 1px solid;
+    padding: 20px;
+}
+
+td a {
+    color:  #033319;
+}
+
+.descRow {
+    text-align: left;
+}
