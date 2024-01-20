@@ -3,270 +3,66 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <title>How to Help</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Birthing Injustice</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="script.js"></script>
   </head>
 
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width">
-      <title>Birthing Injustice</title>
-      <link href="style.css" rel="stylesheet" type="text/css" />
-      <script src="script.js"></script>
-    </head>
-  
-    <body>
-        <nav id="mySidepanel" class="sidepanel" open="false">
-            <a href="index.html" class="text">Home</a>
-            <a href="resources.html" class="text">Resources</a>
-            <a href="howToHelp.html" class="text">How to Help</a>
-            <a href="about.html" class="text">About</a>
-        </nav>
-  
-        <div id="main">
-            <button alt="menu" class="openbtn" onclick="openNav()">
-              &#9776;
-            </button>
-            <h1 id="mainPage" class="title">
-                Resources
-            </h1>
-            <table id="myTable">
-                <tr id="header">
-                    <th dir="asc">
-                        Resource Type 
-                        <button onclick="sortTable(0)" class="sortButton">
-                            &#x21D5
-                        </button>
-                    </th>
-                    <th dir="asc">
-                        Author 
-                        <button onclick="sortTable(1)" class="sortButton">
-                            &#x21D5
-                        </button></th>
-                    <th dir="desc">
-                        Year
-                        <button onclick="sortTable(2)" class="sortButton">
-                            &#x21D5
-                        </button>
-                    </th>
-                    <th dir="asc">
-                        Title
-                        <button onclick="sortTable(3)" class="sortButton">
-                            &#x21D5
-                        </button>
-                    </th>
-                    <th dir="asc">
-                        Publication
-                        <button onclick="sortTable(4)" class="sortButton">
-                            &#x21D5
-                        </button>
-                    </th>
-                    <th dir="asc">
-                        DOI
-                        <button onclick="sortTable(5)" class="sortButton">
-                            &#x21D5
-                        </button>
-                    </th>
-                </tr>
-                <tr class="oddRow" onclick="showHiddenRow('hidden_row1')">
-                    <td class="Resource Type">Journal Article</td>
-                    <td class="Author">Ranabhat, Chhabi L.; Atkinson, Joel; Park, Myung-Bae; Kim, Chun-Bae; Jakovljevic, Mihajlo</td>
-                    <td class="Year">2018</td>
-                    <td class="Title"><a href="https://www.frontiersin.org/articles/10.3389/fphar.2018.00960/full">The Influence of Universal Health Coverage on Life Expectancy at Birth (LEAB) and Healthy Life Expectancy (HALE): A Multi-Country Cross-Sectional Study</a></td>
-                    <td class="Publication">Frontiers in Pharmacology</td>
-                    <td class="DOI">10.3389/fphar.2018.00960</td>
-                </tr>
-                <tr id="hidden_row1" class="hiddenRow descRow oddRow">
-                    <td colspan="6" class="Abstract">
-                        There are substantial differences in long term health outcomes across countries, particularly in terms of both life expectancy at birth (LEAB) and healthy life expectancy (HALE). Socio-economic status, disease prevention approaches, life style and health financing systems all influence long-term health goals such as life expectancy. Within this context, universal health coverage (UHC) is expected to influence life expectancy as a comprehensive health policy. The aim of the study is to investigate this relationship between Universal Health Coverage (UHC) and life expectancy. Method A multi-country cross-sectional study was performed drawing on different sources of data (World Health Organization, UNDP-Education and World Bank) from 193 UN member countries, applying administrative record linkage theory. Descriptive statistics, t-tests, Pearson correlations, hierarchical linear regressions were utilized as appropriate. Result Global average healthy life years was shown to be 61.34± 8.40 and life expectancy at birth was 70.00 ± 9.3. Standardized coefficients from regression analysis found UHC (0.34), child vaccination (Diphtheria Pertussis Tetanus -3: 0.17) and sanitation coverage (0.31) were associated with significantly increased life expectancy at birth. In contrast, population growth was associated with a decrease (0.29). Likewise, unit increases in child vaccination (DPT 3), sanitation and UHC would increase healthy life expectancy considerably (0.18, 0.31, and 0.40 respectively), whereas the same for population growth reduces healthy life expectancy by 0.28. Conclusion Universal Health Coverage (UHC) is a comprehensive health system approach that facilitates a wide range of health services and significantly improves the life expectancy at birth and healthy life expectancy. This study suggests that specific programs to achieve UHC should be considered for countries that have not seen sufficient gains in life expectancy as part of the wider push to achieve the Sustainable Development Goal (SDG).
-                    </td>
-                </tr>
-                <tr class="" onclick="showHiddenRow('hidden_row2')">
-                    <td class="Resource Type">Journal Article</td>
-                    <td class="Author">Gee, Gilbert C.; Walsemann, Katrina M.; Brondolo, Elizabeth</td>
-                    <td class="Year">2012</td>
-                    <td class="Title"><a href="https://ajph.aphapublications.org/doi/full/10.2105/AJPH.2012.300666">A Life Course Perspective on How Racism May Be Related to Health Inequities</a></td>
-                    <td class="Publication">American Journal of Public Health</td>
-                    <td class="DOI">10.2105/AJPH.2012.300666</td>
-                </tr>
-                <tr id="hidden_row2" class="hiddenRow descRow">
-                    <td colspan="6" class="Abstract">
-                        Recent studies show that racism may influence health inequities. As individuals grow from infancy into old age, they encounter social institutions that may create new exposures to racial bias. Yet, few studies have considered this idea fully. We suggest a framework that shows how racism and health inequities may be viewed from a life course perspective. It applies the ideas of age-patterned exposures, sensitive periods, linked lives, latency period, stress proliferation, historic period, and cohorts. It suggests an overarching idea that racism can structure one’s time in asset-building contexts (e.g., education) or disadvantaged contexts (e.g., prison). This variation in time and exposure can contribute to racial inequities in life expectancy and other health outcomes across the life course and over generations.
-                    </td>
-                </tr>
-                <tr class="oddRow" onclick="showHiddenRow('hidden_row3')">
-                    <td class="Resource Type">Webpage</td>
-                    <td class="Author"> </td>
-                    <td class="Year">2012</td>
-                    <td class="Title"><a href="https://datacenter.kidscount.org/">Infant mortality by race | KIDS COUNT Data Center</a></td>
-                    <td class="Publication"> </td>
-                    <td class="DOI"> </td>
-                </tr>
-                <tr id="hidden_row3"  class="hiddenRow descRow oddRow">
-                    <td colspan="6" class="Abstract">
-                        U.S. statistics on infant mortality, birth outcomes, and other information that can be sorted by race, state, economic wellbeing, and other demographics.
-                    </td>
-                </tr> 
-                <tr class="" onclick="showHiddenRow('hidden_row4')">
-                    <td class="Resource Type">Journal Article</td>
-                    <td class="Author">Greenwood, Brad N.; Hardeman, Rachel R.; Huang, Laura; Sojourner, Aaron</td>
-                    <td class="Year">2020</td>
-                    <td class="Title"><a href="http://www.pnas.org/lookup/doi/10.1073/pnas.1913405117">Physician–patient racial concordance and disparities in birthing mortality for newborns</a></td>
-                    <td class="Publication">Proceedings of the National Academy of Sciences</td>
-                    <td class="DOI">10.1073/pnas.1913405117</td>
-                </tr>
-                <tr class="hiddenRow descRow" id="hidden_row4" >
-                    <td colspan="6" class="Abstract">
-                        Recent work has emphasized the benefits of patient–physician concordance on clinical care outcomes for underrepresented minorities, arguing it can ameliorate outgroup biases, boost communication, and increase trust. We explore concordance in a setting where racial disparities are particularly severe: childbirth. In the United States, Black newborns die at three times the rate of White newborns. Results examining 1.8 million hospital births in the state of Florida between 1992 and 2015 suggest that newborn–physician racial concordance is associated with a significant improvement in mortality for Black infants. Results further suggest that these benefits manifest during more challenging births and in hospitals that deliver more Black babies. We find no significant improvement in maternal mortality when birthing mothers share race with their physician.
-                    </td>
-                </tr>
-                <tr onclick="showHiddenRow('hidden_row5')" class="oddRow">
-                    <td class="Resource Type">Journal Article</td>
-                    <td class="Author">Love, Catherine; David, Richard J.; Rankin, Kristin M.; Collins, James W.</td>
-                    <td class="Year">2010</td>
-                    <td class="Title">Exploring weathering: effects of lifelong economic environment and maternal age on low birth weight, small for gestational age, and preterm birth in African-American and white women</td>
-                    <td class="Publication">American Journal of Public Health</td>
-                    <td class="DOI">10.1093/aje/kwq109</td>
-                </tr>
-                <tr id="hidden_row5" class="hiddenRow descRow oddRow">
-                    <td colspan="6" class="Abstract">White women experience their lowest rate of low birth weight (LBW) in their late 20s; the nadir LBW for African-American women is under 20 years with rates rising monotonically thereafter, hypothesized as due to "weathering" or deteriorating health with cumulative disadvantage. Current residential environment affects birth outcomes for all women, but little is known about the impact of early life environment. The authors linked neighborhood income to a transgenerational birth file containing infant and maternal birth data, allowing assessment of economic effects over a woman's life course. African-American women who were born in poorer neighborhoods and were still poor as mothers showed significant weathering with regard to LBW and small for gestational age (SGA) but not preterm birth (PTB). However, African-American women in upper-income areas at both time points had a steady fall in LBW and SGA rate with age, similar to the pattern seen in white women. No group of white women, even those always living in poorer neighborhoods, exhibited weathering with regard to LBW, SGA, or PTB. In contrast, the degree of weathering among African-American women is related to duration of exposure to low-income areas and disappears for those with a life residence in non-poor neighborhoods.
-                </td>
-                </tr>
-                <tr class="" onclick="showHiddenRow('hidden_row6')">
-                    <td class="Resource Type">Journal Article</td>
-                    <td class="Author">Anderson, Steven R; Gianola, Morgan; Perry, Jenna M; Losin, Elizabeth A Reynolds</td>
-                    <td class="Year">2020</td>
-                    <td class="Title"><a href="https://doi.org/10.1093/pm/pnaa258">Clinician–Patient Racial/Ethnic Concordance Influences Racial/Ethnic Minority Pain: Evidence from Simulated Clinical Interactions</a></td>
-                    <td class="Publication">Pain Medicine</td>
-                    <td class="DOI">10.1093/pm/pnaa258</td>
-                </tr>
-                <tr id="hidden_row6" class="hiddenRow descRow" >
-                    <td colspan="6" class="Abstract">
-                        Racial and ethnic minorities in the United States report higher levels of both clinical and experimental pain, yet frequently receive inadequate pain treatment. Although these disparities are well documented, their underlying causes remain largely unknown. Evidence from social psychological and health disparities research suggests that clinician–patient racial/ethnic concordance may improve minority patient health outcomes. Yet whether clinician–patient racial/ethnic concordance influences pain remains poorly understood.Medical trainees and community members/undergraduates played the role of “clinicians” and “patients,” respectively, in simulated clinical interactions. All participants identified as non-Hispanic Black/African American, Hispanic white, or non-Hispanic white. Interactions were randomized to be either racially/ethnically concordant or discordant in a 3 (clinician race/ethnicity) × 2 (clinician–patient racial/ethnic concordance) factorial design. Clinicians took the medical history and vital signs of the patient and administered an analogue of a painful medical procedure.As predicted, clinician–patient racial/ethnic concordance reduced self-reported and physiological indicators of pain for non-Hispanic Black/African American patients and did not influence pain for non-Hispanic white patients. Contrary to our prediction, concordance was associated with increased pain report in Hispanic white patients. Finally, the influence of concordance on pain-induced physiological arousal was largest for patients who reported prior experience with or current worry about racial/ethnic discrimination.Our findings inform our understanding of the sociocultural factors that influence pain within medical contexts and suggest that increasing minority, particularly non-Hispanic Black/African American, physician numbers may help reduce persistent racial/ethnic pain disparities.
-                    </td>
-                </tr>
-                <tr onclick="showHiddenRow('hidden_row7')" class="oddRow">
-                    <td class="Resource Type">Journal Article</td>
-                    <td class="Author">Geronimus, A. T.</td>
-                    <td class="Year">1992</td>
-                    <td class="Title">The weathering hypothesis and the health of African-American women and infants: evidence and speculations</td>
-                    <td class="Publication">Ethnicity & Disease</td>
-                    <td class="DOI"></td>
-                </tr>
-                <tr id="hidden_row7" class="hiddenRow descRow oddRow">
-                    <td colspan="6" class="Abstract">
-                        Observed variation between populations in fertility-timing distributions has been thought to contribute to infant mortality differentials. This hypothesis is based, in part, on the belief that the 20s through early 30s constitute "prime" childbearing ages that are low-risk relative to younger or older ages. However, when stratified by racial identification over the predominant first child-bearing ages, maternal age patterns of neonatal mortality vary between groups. Unlike non-Hispanic white infants, African-American infants with teen mothers experience a survival advantage relative to infants whose mothers are older. The black-white infant mortality differential is larger at older maternal ages than at younger ages. While African Americans and non-Hispanic whites differ on which maternal ages are associated with the lowest risk of neonatal mortality, within each population, first births are most frequent at its lowest-risk maternal ages. As a possible explanation for racial variation in maternal age patterns of births and birth outcomes, the "weathering hypothesis" is proposed: namely, that the health of African-American women may begin to deteriorate in early adulthood as a physical consequence of cumulative socioeconomic disadvantage.
-                    </td>
-                </tr>
-                <tr class="" onclick="showHiddenRow('hidden_row8')">
-                    <td class="Resource Type">Journal Article</td>
-                    <td class="Author"> </td>
-                    <td class="Year">1996</td>
-                    <td class="Title"><a href="https://www-sciencedirect-com.silk.library.umass.edu/science/article/pii/027795369500159X">Black/white differences in the relationship of maternal age to birthweight: A population-based test of the weathering hypothesis</a></td>
-                    <td class="Publication">Social Science & Medicine</td>
-                    <td class="DOI">10.1016/0277-9536(95)00159-X</td>
-                </tr>
-                <tr id="hidden_row8"  class="hiddenRow descRow">
-                    <td colspan="6" class="Abstract">
-                        This study seeks to explore if early health deterioration (‘weathering’) among young adult African American women contributes to observed increases wi…
-                    </td>
-                </tr>
-                <tr onclick="showHiddenRow('hidden_row9')" class="oddRow">
-                    <td class="Resource Type">Journal Article</td>
-                    <td class="Author">Geronimus, Arline T.; Andersen, H. Frank; Bound, John</td>
-                    <td class="Year">1991</td>
-                    <td class="Title"><a href="http://www.jstor.org/stable/4596955">Differences in Hypertension Prevalence among U.S. Black and White Women of Childbearing Age</a></td>
-                    <td class="Publication">Public Health Reports (1974-)</td>
-                    <td class="DOI"> </td>
-                </tr>
-                <tr id="hidden_row9" class="hiddenRow descRow oddRow">
-                    <td colspan="6" class="Abstract">
-                        Hypertension and its sequelae complicate pregnancy and can result in poor perinatal outcomes. Overall, U.S. blacks are more likely to be hypertensive than whites, but the degree to which this is true among women of childbearing age (including teenagers) is unknown. Using data from the second National Health and Nutrition Examination Survey (NHANES II), the authors describe hypertension prevalence rates for 422 black and 2,700 white reproductive-age women. The authors present observed data and also predicted prevalence rates derived by modeling the odds of hypertension using logistic regression statistical techniques. They find that black-white differences in hypertension prevalence are negligible among teenagers, but they are pronounced in the older reproductive ages. They estimate that twice the proportion of black women relative to white are hypertensive during pregnancy. Their results suggest that differential rates of hypertension between black and white women may contribute to the persistent excess infant mortality among blacks, but conclusive results cannot be determined from these data. These data are also valuable for the design and evaluation of screening, intervention, and followup programs for hypertensive disease among young women.
-                    </td>
-                </tr>
-                <tr class="" onclick="showHiddenRow('hidden_row10')">
-                    <td class="Resource Type">Journal Article</td>
-                    <td class="Author">David, Richard J.; Collins, James W.</td>
-                    <td class="Year">1997</td>
-                    <td class="Title"><a href="https://doi.org/10.1056/NEJM199710233371706">Differing Birth Weight among Infants of U.S.-Born Blacks, African-Born Blacks, and U.S.-Born Whites</a></td>
-                    <td class="Publication">New England Journal of Medicine</td>
-                    <td class="DOI">10.1056/NEJM199710233371706</td>
-                </tr>
-                <tr id="hidden_row10" class="hiddenRow descRow">
-                    <td colspan="6" class="Abstract">During the past 40 years, epidemiologic research has elucidated many important associations between the sociodemographic characteristics of mothers and the birth weight of infants.1–4 For example, the extremes of childbearing age,1 cigarette smoking,2 inadequate prenatal care,3 urban poverty,4 and black race5 are well-documented risk factors for low birth weight. Other obstetrical risk factors account for part of the racial disparity in birth weights, but differences persist.6–9 Although the incidence of low birth weight decreases in both blacks and whites as the number of risk factors declines, the improvement is faster among whites, resulting in a wider birth-weight gap . . .
-                </td>
-                </tr>
-                <tr onclick="showHiddenRow('hidden_row11')" class="oddRow">
-                    <td class="Resource Type">Journal Article</td>
-                    <td class="Author">Valanis, Barbara Mayleas; Rush, David</td>
-                    <td class="Year">1979</td>
-                    <td class="Title"><a href="https://doi.org/10.1080/19485565.1979.9988378">A partial explanation of superior birth weights among foreign‐born women</a></td>
-                    <td class="Publication">Social Biology</td>
-                    <td class="DOI">10.1080/19485565.1979.9988378</td>
-                </tr>
-                <tr id="hidden_row11" class="hiddenRow descRow oddRow">
-                    <td colspan="6" class="Abstract">
-                        This study of 766 black women confirms and partially explains reports of higher birth weights among foreign‐born women. Subjects were new registrants for prenatal care at a public clinic in Harlem, New York City, 1971–73, and part of a randomized trial of nutritional supplementation during pregnancy. Three nativity groups were represented: New York City, southern United States, and foreign countries. Despite standard selection of all subjects for high risk of low birth weight, foreign‐born women had only 3.8 per cent of births under 2,500 grams in contrast with 15.6 per cent among the southern‐born and 18.4 per cent among the NYC‐born women. Six sets of variables were examined in relation to the birth‐weight outcome. An average birth‐weight advantage of 218 grams for the foreign‐born was found to be associated with higher childhood social status and more positive health behaviors.
-                    </td>
-                </tr>
-                <tr class="" onclick="showHiddenRow('hidden_row12')">
-                    <td class="Resource Type">Journal Article</td>
-                    <td class="Author">Geronimus, Arline T.; Hicken, Margaret T.; Pearson, Jay A.; Seashols, Sarah J.; Brown, Kelly L.; Cruz, Tracey Dawson</td>
-                    <td class="Year">2010</td>
-                    <td class="Title"><a href="http://silk.library.umass.edu/login?url=https://search.ebscohost.com/login.aspx?direct=true&db=edsgao&AN=edsgcl.363687887&site=eds-live&scope=site">Do US Black Women Experience Stress-Related Accelerated Biological Aging? A Novel Theory and First Population-Based Test of Black-White Differences in Telomere Length</a></td>
-                    <td class="Publication">Human Nature</td>
-                    <td class="DOI">10.1007/s12110-010-9078-0</td>
-                </tr>
-                <tr id="hidden_row12" class="hiddenRow descRow">
-                    <td colspan="6" class="Abstract">
-                        We hypothesize that black women experience accelerated biological aging in response to repeated or prolonged adaptation to subjective and objective stressors. Drawing on stress physiology and ethnographic, social science, and public health literature, we lay out the rationale for this hypothesis. We also perform a first population-based test of its plausibility, focusing on telomere length, a biomeasure of aging that may be shortened by stressors. Analyzing data from the Study of Women&apos;s Health Across the Nation (SWAN), we estimate that at ages 49-55, black women are 7.5 years biologically "older" than white women. Indicators of perceived stress and poverty account for 27% of this difference. Data limitations preclude assessing objective stressors and also result in imprecise estimates, limiting our ability to draw firm inferences. Further investigation of black-white differences in telomere length using large-population-based samples of broad age range and with detailed measures of environmental stressors is merited. Keywords Health disparities * Aging * Stress * Race/ethnicity * Weathering * Women&apos;s health * Poverty * Telomeres
-                    </td>
-                </tr>
-                <tr onclick="showHiddenRow('hidden_row13')" class="oddRow">
-                    <td class="Resource Type">Journal Article</td>
-                    <td class="Author">Lauderdale, Diane S.</td>
-                    <td class="Year">2006</td>
-                    <td class="Title">Birth outcomes for Arabic-named women in California before and after September 11.</td>
-                    <td class="Publication">Demography</td>
-                    <td class="DOI">10.1353/dem.2006.0008</td>
-                </tr>
-                <tr id="hidden_row13" class="hiddenRow descRow oddRow">
-                    <td colspan="6" class="Abstract">
-                        Persons who were perceived to be Arabs experienced a period of increased harassment, violence, and workplace discrimination in the United States in the weeks immediately following September 11, 2001. Drawing on prior studies that have hypothesized that experiences of discrimination increase the risk of preterm birth and low birth weight, this study explores whether there was an effect on birth outcomes for pregnant women of Arab descent. California birth certificate data are used to determine the relative risk of poor birth outcomes by race, ethnicity, and nativity for women who gave birth in the six months following September 2001, compared with the same six calendar months one year earlier. The relative risk of poor birth outcomes was significantly elevated for Arabic-named women and not for any of the other groups.
-                    </td>
-                </tr>
-                <tr class="" onclick="showHiddenRow('hidden_row14')">
-                    <td class="Resource Type">Newspaper Article</td>
-                    <td class="Author"> </td>
-                    <td class="Year">2021</td>
-                    <td class="Title"><a href="https://www.bbc.com/news/world-us-canada-56288038">Baby bust: US birth rate falls during pandemic</a></td>
-                    <td class="Publication">BBC News</td>
-                    <td class="DOI"> </td>
-                </tr>
-                <tr id="hidden_row14" class="hiddenRow descRow">
-                    <td colspan="6" class="Abstract">
-                        Nine months after the pandemic began, the birth rate was down in several states.
-                    </td>
-                </tr>
-                <tr class="oddRow" onclick="showHiddenRow('hidden_row15')">
-                    <td class="Resource Type">Book</td>
-                    <td class="Author">Oparah, Julia; Bonaparte, Alicia</td>
-                    <td class="Year">2015</td>
-                    <td class="Title"><a href="https://www.routledge.com/Birthing-Justice-Black-Women-Pregnancy-and-Childbirth/Oparah-Bonaparte/p/book/9781138191457">Birthing Justice: Black Women, Pregnancy, and Childbirth</a></td>
-                    <td class="Publication">Routledge</td>
-                    <td class="DOI"> </td>
-                </tr>
-                <tr id="hidden_row15" class="hiddenRow descRow oddRow">
-                    <td colspan="6" class="Abstract">
-                        There is a global crisis in maternal health care for black women. In the United States, black women are over three times more likely to perish from pregnancy-related complications than white women; their babies are half as likely to survive the first year. Many black women experience policing, coercion, and disempowerment during pregnancy and childbirth and are disconnected from alternative birthing traditions. This book places black women's voices at the center of the debate on what should be done to fix the broken maternity system and foregrounds black women's agency in the emerging birth justice movement. Mixing scholarly, activist, and personal perspectives, the book shows readers how they too can change lives, one birth at a time.
-                    </td>
-                </tr>
-                </table>
-        </div>
+  <body>
+    <nav id="mySidepanel" class="sidepanel" open="false">
+        <a href="index.html" class="text">Home</a>
+        <a href="info-and-research.html" class="text">Research</a>
+        <a href="resources.html" class="text">Resources</a>
+        <a href="about.html" class="text">About</a>
+    </nav>
 
-    
+    <div id="main">
+        <button alt="menu" class="openbtn" onclick="openNav()">
+            &#9776;
+        </button>
+        <h1 id="mainPage" class="title">
+          How To Help
+        </h1>
+        <div class="image-with-text">
+            <a href="https://www.roottrj.org/">		<!--link the button brings you to-->
+                <img class="image-buttons-help" alt="Restoring Our Own Through Transformation" src="photos/ROOT.png">
+            </a>
+            <p>"ROOTT is a Black women-led reproductive justice organization dedicated to 
+                collectively restoring our well-being through self-determination, collaboration, 
+                and resources to meet the needs of women and families within communities."</p>
+        </div>
+        <div class="image-with-text" id="odd-row">
+            <a href="https://voicesforbirthjustice.org/">		<!--link the button brings you to-->
+                <img class="image-buttons-help" alt="Voices for Birth Justice" src="photos/VBJ.png">
+            </a>
+            <p>"Birth Justice is a movement that believes when birthing people recognize their innate 
+                power to make the best health decisions for themselves and their families during all 
+                stages of the pregnancy, birth, and the post-birth period, that power will have a 
+                transformational impact on their family and community.</p>
+        </div>
+        <div class="image-with-text">
+            <a href="https://www.blackwomenbirthingjustice.com/">		<!--link the button brings you to-->
+                <img  class="image-buttons-help" alt="Black Women Birthing Justice" src="photos/BWBJ.png">
+            </a>
+            <p>"[Black Women Birthing Justice's] vision is that every pregnant person has an empowering birth and postpartum 
+                experience, free of unnecessary medical interventions and forced separation from 
+                their child, one that honors their autonomy and maintains dignity. [BBWJ] aim[s] to educate 
+                and inform, to document and share Black women and individuals’ birth stories in 
+                their own words, to raise awareness, influence healthcare policy, and keep birth 
+                sacred. We challenge human rights violations, including maternal mortality and near 
+                misses, and rebuild confidence in our Black and Brown community’s ability to birth."</p>
+        </div>
+    </div>
   </body>
 </html>
